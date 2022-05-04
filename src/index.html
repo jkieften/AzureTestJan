@@ -10,13 +10,13 @@
 
 <body>
     <main>
-    <h1>Vanilla JavaScript App</h1>
+    <h1>Hanke is meestal wel lief!</h1>
     <p>Loading content from the API: <b id="name">...</b></p>
     </main>
 
     <script>
     (async function() {
-        const { text } = await( await fetch(`/api/bericht`)).json();
+        const { text } = await( await fetch(`/api/message`)).json();
         document.querySelector('#name').textContent = text;
     }())
     </script>
